@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Snack Shack — cheap, delicious snacks available at school lunch time.">
+  <title>The Snack Shack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;900&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="The Snack Shack home">
+      <span aria-hidden="true">⚡</span> SNACK SHACK
+    </a>
+    <a class="menu-link" href="#menu">See the menu <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">OPEN EVERY LUNCHTIME · AT SCHOOL</p>
+        <h1>Big cravings.<br><span>Tiny prices.</span></h1>
+        <a class="cta" href="#menu"><span>SEE THE MENU</span><span class="cta-arrow" aria-hidden="true">↓</span></a>
+        <p class="intro">Snack Shack sells cheap, delicious snacks and drinks at the student club table every lunchtime.</p>
+      </div>
+      <div class="hero-art" aria-label="A happy bag of school snacks">
+        <span class="burst">UNDER<br>$3!</span>
+        <div class="snack-bag">
+          <span class="bag-chip">🍪</span>
+          <span class="bag-title">GOOD<br>STUFF</span>
+          <span class="bag-face">• ◡ •</span>
+        </div>
+        <span class="float f1">🍫</span>
+        <span class="float f2">🥨</span>
+        <span class="float f3">🧃</span>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Club highlights">
+      <span>CHEAP EATS</span><i>★</i><span>GOOD VIBES</span><i>★</i><span>FRIDAY DEALS</span><i>★</i><span>ZERO BORING SNACKS</span>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TODAY’S LINE-UP</p>
+          <h2>Choose your fuel.</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter menu">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="sweet">Sweet</button>
+          <button class="filter" data-filter="salty">Salty</button>
+          <button class="filter" data-filter="drinks">Drinks</button>
+        </div>
+      </div>
+
+      <div class="menu-grid" aria-live="polite">
+        <article class="snack-card yellow" data-category="salty">
+          <div class="snack-picture"><img class="chip-image" src="assets/0002840009085.webp" alt="Lay's Classic potato chips"><b>CRUNCH!</b></div>
+          <div class="card-info"><div><p class="tag">SALTY</p><h3>Classic Chips</h3><p>Crunchy, salty, gone in seconds.</p></div><strong>$1.50</strong></div>
+        </article>
+        <article class="snack-card pink" data-category="sweet">
+          <div class="snack-picture"><img class="cookie-image" src="assets/choc-chip-cookie.png" alt="Chocolate chip cookie"><b>CHEWY!</b></div>
+          <div class="card-info"><div><p class="tag">SWEET</p><h3>Choc Chip Cookie</h3><p>Soft-baked with loads of chocolate.</p></div><strong>$1.00</strong></div>
+        </article>
+        <article class="snack-card blue" data-category="drinks">
+          <div class="snack-picture"><img class="drink-image" src="assets/soft-drink.png" alt="Red soft drink can"><b>CHILL!</b></div>
+          <div class="card-info"><div><p class="tag">DRINKS</p><h3>Soft Drink</h3><p>Cold, fizzy, and ready to refresh.</p></div><strong>$1.50</strong></div>
+        </article>
+        <article class="snack-card orange" data-category="sweet">
+          <div class="snack-picture"><img class="churros-image" src="assets/homemade-churros.png" alt="Homemade cinnamon churros"><b>TWISTED!</b></div>
+          <div class="card-info"><div><p class="tag">SWEET</p><h3>Homemade Churros</h3><p>Warm, sugary, and made with love.</p></div><strong>$2.00</strong></div>
+        </article>
+        <article class="snack-card purple" data-category="sweet">
+          <div class="snack-picture"><img class="chocolate-image" src="assets/chocolate-bar.png" alt="Snickers chocolate bar"><b>YUM!</b></div>
+          <div class="card-info"><div><p class="tag">SWEET</p><h3>Chocolate Bar</h3><p>A classic cure for afternoon slumps.</p></div><strong>$1.50</strong></div>
+        </article>
+        <article class="snack-card green" data-category="drinks">
+          <div class="snack-picture"><img class="water-image" src="assets/cold-water.png" alt="Fiji bottled water"><b>FRESH!</b></div>
+          <div class="card-info"><div><p class="tag">DRINKS</p><h3>Cold Water</h3><p>Ice-cold hydration. Simple.</p></div><strong>$1.00</strong></div>
+        </article>
+      </div>
+      <p class="empty-message" hidden>No snacks in this category right now.</p>
+    </section>
+
+    <section class="deal-section">
+      <div class="deal-sticker"><span>FRIDAY</span><strong>25%<br>OFF</strong></div>
+      <div>
+        <p class="eyebrow">WEEKLY DROP</p>
+        <h2>Friday tastes better.</h2>
+        <p>Every Friday, all menu items are 25% off. No code. No catch. Just show up hungry.</p>
+      </div>
+      <button id="dealButton" class="deal-button">See Friday prices</button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#top"><span aria-hidden="true">⚡</span> SNACK SHACK</a>
+    <p>Providing cheap &amp; delicious snacks in school.</p>
+    <p class="small">Made by Mia · Cash only · While supplies last</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
